@@ -1,0 +1,127 @@
+.form-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+.form-column {
+	flex: 1;
+	min-width: 220px;
+	box-sizing: border-box;
+	border: 1px solid #0a0a0a;
+}
+
+.form-column label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-column select {
+	width: 100%;
+}
+
+.add-new-button {
+	margin-top: 10px;
+	padding: 8px 20px;
+	color: cornflowerblue;
+	border: 1px solid cornflowerblue;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.add-new-button:hover {
+	background-color: lightblue;
+	color: black;
+}
+
+.delete-button {
+	padding: 6px 20px;
+	color: cornflowerblue;
+	border: 1px solid cornflowerblue;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+	background-color: #ff0000;
+	color: white;
+}
+
+.template-row {
+	border: #0a0a0a;
+}
+
+.form-table {
+	border: 1px solid darkgray;
+	width: 100%;
+}
+
+.wrap {
+	background-color: whitesmoke;
+}
+.toggle-switch {
+	position: relative;
+	display: inline-block;
+	width: 30px; /* Reduced width for a smaller toggle */
+	height: 16px; /* Reduced height for a smaller toggle */
+}
+
+.toggle-switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border-radius: 16px; /* Adjusted for the smaller size */
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 12px; /* Reduced handle height */
+	width: 12px; /* Reduced handle width */
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	transition: .4s;
+	border-radius: 50%; /* Keep it round */
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+	transform: translateX(14px); /* Adjusted for the smaller size */
+}
+
+
+
+.row {
+	border: 1px solid darkgray;
+}
+
+.form-table tbody tr:nth-child(odd) {
+	background-color: #f9f9f9;
+}
+
+.form-table tbody tr:nth-child(even) {
+	background-color: #fff;
+}
+
+.form-table tbody tr:hover {
+	background-color: #e2e2e2;
+}
